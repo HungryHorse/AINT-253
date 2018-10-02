@@ -1,16 +1,21 @@
 fileFormatVersion: 2
-guid: c12adf2bbd5c030448505756f6f80304
-timeCreated: 1538404174
-licenseType: Free
+guid: d4c43a573bd03ce48823163c5da7ee2f
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Box002
+    100002: Cylinder001
+    100004: //RootNode
+    400000: Box002
+    400002: Cylinder001
+    400004: //RootNode
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
+    2300000: Box002
+    2300002: Cylinder001
+    3300000: Box002
+    3300002: Cylinder001
     4300000: Box002
+    4300002: Cylinder001
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -32,6 +37,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
