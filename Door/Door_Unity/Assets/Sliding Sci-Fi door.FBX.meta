@@ -1,19 +1,33 @@
 fileFormatVersion: 2
-guid: 842c1dd1ffc86f644a7d0583ac928505
+guid: 5f07e84886ec29349924e96772630409
+timeCreated: 1538567193
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Cylinder001
-    100002: //RootNode
-    400000: Cylinder001
-    400002: //RootNode
+    100000: DoorLeft
+    100002: DoorRight
+    100004: LockLeft
+    100006: LockRight
+    100008: //RootNode
+    400000: DoorLeft
+    400002: DoorRight
+    400004: LockLeft
+    400006: LockRight
+    400008: //RootNode
     2100000: No Name
-    2300000: Cylinder001
-    2300002: //RootNode
-    3300000: Cylinder001
-    3300002: //RootNode
-    4300000: Box002
-    4300002: Cylinder001
+    2300000: DoorLeft
+    2300002: DoorRight
+    2300004: LockLeft
+    2300006: LockRight
+    3300000: DoorLeft
+    3300002: DoorRight
+    3300004: LockLeft
+    3300006: LockRight
+    4300000: DoorLeft
+    4300002: DoorRight
+    4300004: LockRight
+    4300006: LockLeft
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -35,7 +49,6 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
