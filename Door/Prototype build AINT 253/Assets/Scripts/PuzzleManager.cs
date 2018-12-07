@@ -38,6 +38,7 @@ public class PuzzleManager : MonoBehaviour {
         else
         {
             currIndex = 0;
+            correctInputs = 0;
         }
         if (correctInputs == correctInput.Length)
         {
