@@ -19,7 +19,7 @@ public class Book : MonoBehaviour {
 	void Update ()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Main.enabled = true;
             pointOfView.enabled = false;
@@ -30,7 +30,7 @@ public class Book : MonoBehaviour {
 
 	}
 
-    public void Interact()
+    public void InteractOnE()
     {
         GetComponent<Animator>().Play("BookAnimation");
         pointOfView.enabled = true;

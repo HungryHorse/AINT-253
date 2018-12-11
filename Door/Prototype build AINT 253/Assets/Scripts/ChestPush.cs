@@ -35,7 +35,7 @@ public class ChestPush : MonoBehaviour {
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Escape) && pushing)
+        if (Input.GetKeyDown(KeyCode.E) && pushing)
         {
 
             Main.enabled = true;
