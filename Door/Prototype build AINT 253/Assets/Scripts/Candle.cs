@@ -5,6 +5,7 @@ using UnityEngine;
 public class Candle : MonoBehaviour {
     public PuzzleManager puzzleManager;
     public int candleNumber;
+    public AudioSource lever;
 
 	// Use this for initialization
 	void Start ()
@@ -18,10 +19,14 @@ public class Candle : MonoBehaviour {
 		
 	}
 
-    public void Interact()
+    public void InteractOnE()
     {
         puzzleManager.newInput(candleNumber);
-        GetComponent<Animator>().Play("CandleAniamtion");
+        transform.parent.gameObject.GetComponent<Animator>().Play("CandleAniamtion");
         Debug.Log("Interact");
+        if (!lever.isPlaying)
+        {
+            lever.Play();
+        }
     }
 }

@@ -7,7 +7,8 @@ public class PuzzleManager : MonoBehaviour {
     int correctInputs = 0;
     int currIndex = 0;
     public bool puzzleSolved;
-    public Material completedMat;
+    public Rigidbody keyRb;
+    public AudioSource KeyDispenser;
 
 	// Use this for initialization
 	void Start () {
@@ -19,11 +20,10 @@ public class PuzzleManager : MonoBehaviour {
     {
         if (puzzleSolved)
         {
-            completedMat.SetColor("_Color", Color.green);
-        }
-        else
-        {
-            completedMat.SetColor("_Color", Color.red);
+            if (keyRb != null)
+            {
+                keyRb.isKinematic = false;
+            }
         }
     }
 
@@ -43,7 +43,7 @@ public class PuzzleManager : MonoBehaviour {
         if (correctInputs == correctInput.Length)
         {
             puzzleSolved = true;
-            completedMat.SetColor("_Color", Color.green);
+            KeyDispenser.Play();
         }
     }
 }

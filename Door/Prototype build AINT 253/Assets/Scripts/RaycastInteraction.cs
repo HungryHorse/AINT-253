@@ -20,7 +20,7 @@ public class RaycastInteraction : MonoBehaviour {
         position = new Rect((Screen.width - crosshair.width) / 2, (Screen.height - crosshair.height) / 2, crosshair.width, crosshair.height);
         RaycastHit hit;
 
-		if(Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
+		if(Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, 1))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             hitting = true;
